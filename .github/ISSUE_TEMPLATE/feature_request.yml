@@ -1,0 +1,33 @@
+name: Feature request
+description: Request an enhancement for Revisual
+labels: [enhancement]
+body:
+
+  - type: textarea
+    attributes:
+      label: "Problem"
+      description: "Describe the problem to be solved."
+      placeholder: "No oranges available. Oranges are important because..."
+    validations:
+      required: true
+
+  - type: textarea
+    attributes:
+      label: "Expected behavior"
+      description: "Describe what the new feature or behavior would look like. How does it solve the problem?"
+    validations:
+      required: true
+
+  - type: checkboxes
+    attributes:
+      label: "Agreements"
+      description: "Check the following before submitting the feature request."
+      options:
+        - label: "My title is concise but descriptive and specific."
+          required: true
+        - label: "I am on the latest Revisual release."
+          required: true
+        - label: "I have searched for [existing feature requests](https://github.com/richardkunkli/revisual-releases/issues?q=is:issue%20label:enhancement%20)."
+          required: true
+        - label: "I have read the [FAQ](https://revisualapp.com/faq)."
+          required: true

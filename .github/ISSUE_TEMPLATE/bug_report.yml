@@ -1,0 +1,83 @@
+name: Bug report
+description: Report a problem in Revisual
+labels: [bug]
+body:
+
+  - type: textarea
+    attributes:
+      label: "Problem"
+      description: "Describe the current behavior. This may include crash logs, images, or videos."
+    validations:
+      required: true
+  - type: textarea
+    attributes:
+      label: "Steps to reproduce"
+      description: "List the steps to reproduce the problem."
+      placeholder: |
+        Open Revisual
+        Enable shadow effect
+    validations:
+      required: true
+  - type: textarea
+    attributes:
+      label: "Expected behavior"
+      description: "Describe the behavior you expect."
+    validations:
+      required: true
+
+  - type: input
+    attributes:
+      label: "Display affecting apps"
+      description: "Are there any display affecting apps? (e.g. Lunar, BetterDisplay) If so, list them."
+      placeholder: "Lunar"
+    validations:
+      required: false
+
+  - type: input
+    attributes:
+      label: "Revisual version"
+      description: |
+        1.  Open Revisual settings
+        2.  Click About
+      placeholder: "1.0.0"
+    validations:
+      required: true
+
+  - type: input
+    attributes:
+      label: "Mac/MacBook model"
+      placeholder: "MacBook Air M2"
+    validations:
+      required: true
+  - type: input
+    attributes:
+      label: "macOS version"
+      placeholder: "15.2"
+    validations:
+      required: true
+
+  - type: checkboxes
+    attributes:
+      label: "macOS Beta"
+      description: "Are you currently on the beta version of macOS?"
+      options:
+        - label: "Yes"
+          required: false
+
+  - type: checkboxes
+    attributes:
+      label: "Agreements"
+      description: "Check the following before submitting the bug report."
+      options:
+        - label: "My title is concise but descriptive and specific."
+          required: true
+        - label: "I am on the latest Revisual release."
+          required: true
+        - label: "I have searched for [existing bug reports](https://github.com/richardkunkli/revisual-releases/issues?q=is%3Aissue+label%3Abug)."
+          required: true
+        - label: "I have read the [FAQ](https://revisualapp.com/faq)."
+          required: true
+        - label: "This is not a usage or 'How to' question."
+          required: true
+        - label: "This is not a \"I didn't receive my license\" or a \"I want a refund\" issue."
+          required: true
